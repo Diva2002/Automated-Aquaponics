@@ -1,0 +1,67 @@
+h2{
+    font-size:1.8rem;
+    text-align:center;
+    text-decoration:underline;
+}
+.bg p{
+    font-size:0.9rem;
+    font-weight: bold;
+    color:white;
+}
+.bg{
+    background-image: url("./assets/bg1.jpg");
+    background-repeat:  no-repeat; 
+    background-position: center;
+    background-size: cover;
+    background-color:#dde2b8;
+}
+
+.bg-light {
+    background-color: beige !important;
+}
+.form-control{
+    background-color: beige !important;
+}
+.container1{
+    background-color:rgba(131, 141, 134, 0.315) !important;
+    color:#272927;
+    box-shadow: rgb(0, 0, 0) 0px 8px 24px;
+}
+
+.container1 h2{
+    color:#ffffff;
+    text-shadow: #6f7e73 1.5px 1.5px 1.5px;
+    background-color: #5f5a7910;
+}
+.btn-success{
+    background-color:#39603d;
+    border:none;
+    margin-top: 23px;
+}
+.btn-success:hover{
+    background-color:#517054;
+    color:beige !important;
+}
+.btn-success:active{
+    background-color:#6d8f70 !important;
+}
+.btn-success:disabled{
+    background-color:chocolate !important;
+}
+
+.btn-default:hover{
+    color:rgb(95, 99, 121);
+}
+.btn-default:active{
+    color:rgb(95, 99, 121) !important;
+}
+#password-errors{
+    /* margin-top:-1rem !important; */
+    font-size:0.8rem;
+    margin-top: -13px;
+}
+#login-errors{
+    font-size:0.8rem;
+    margin-top: -13px;
+}
+
