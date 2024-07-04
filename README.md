@@ -7,6 +7,9 @@ This repository hosts the code and documentation for a cutting-edge smart aquapo
 
 Key Features
 Computer Vision Integration: Utilizes sophisticated algorithms to analyze plant growth stages (seedling, young plant, mature plant), optimizing cultivation strategies.
+
 IoT-Enabled Hardware: Monitors crucial water quality parameters (temperature, pH, nutrient levels, dissolved oxygen) using sensor nodes, ensuring optimal conditions for aquaponic ecosystems.
+
 User-Friendly Interface: Offers a web-based interface for remote monitoring and control, providing users with visualizations of sensor data and captured images.
+
 Reliable Network Infrastructure: Establishes a robust network for seamless data transmission, enabling timely decision-making and system adjustments.
