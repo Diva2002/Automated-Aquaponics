@@ -6,6 +6,7 @@ Detailed Description:
 This repository hosts the code and documentation for a cutting-edge smart aquaponics system designed to revolutionize agricultural practices. The system integrates advanced computer vision technology with IoT-enabled hardware to provide real-time monitoring and intelligent decision-making capabilities for enhanced plant and fish production.
 
 Key Features
+
 Computer Vision Integration: Utilizes sophisticated algorithms to analyze plant growth stages (seedling, young plant, mature plant), optimizing cultivation strategies.
 
 IoT-Enabled Hardware: Monitors crucial water quality parameters (temperature, pH, nutrient levels, dissolved oxygen) using sensor nodes, ensuring optimal conditions for aquaponic ecosystems.
