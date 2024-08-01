@@ -23,3 +23,7 @@ https://fins-ferns.vercel.app/
 
 ![image](https://github.com/user-attachments/assets/4c598e08-5c1c-48a4-8d69-eebc6298ecbc)
 
+![Aquaponics1](https://github.com/user-attachments/assets/84c15e1e-14bf-43f7-a223-52ab202c4110)
+
+![image](https://github.com/user-attachments/assets/00403810-15fb-451d-a5df-62435fbe8064)
+
