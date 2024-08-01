@@ -14,3 +14,12 @@ This repository hosts the code and documentation for a cutting-edge smart aquapo
 * User-Friendly Interface: Offers a web-based interface for remote monitoring and control, providing users with visualizations of sensor data and captured images.
 
 * Reliable Network Infrastructure: Establishes a robust network for seamless data transmission, enabling timely decision-making and system adjustments.
+
+## Video Description: 
+https://drive.google.com/drive/folders/1l7F9NZ6Tjy22gRCe6miHzX9Hu7LZfyt0
+
+## Working Demo: 
+https://fins-ferns.vercel.app/
+
+![image](https://github.com/user-attachments/assets/4c598e08-5c1c-48a4-8d69-eebc6298ecbc)
+
