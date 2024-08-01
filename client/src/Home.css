@@ -1,0 +1,185 @@
+.bg1{
+    background-color: #ffffff; 
+    /* /* height: 100%; */
+    max-height: max-content !important;
+    min-height: 1000px !important;
+    padding-bottom: 20px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+}
+
+.hero-section {
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    background: url("./assets/background.webp") no-repeat center center;
+    background-size: cover;
+
+    .container{
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+
+    .btn{
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin-top: 20px;
+        width: 30%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h2{
+        text-decoration: none !important;
+        font-weight: bold;
+        font-size: 2.5rem;
+    }
+
+    p{
+        font-size: 1.5rem;
+    }
+}
+
+.cont-dashboard{
+    background-color: #def0f700;
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 98%;
+    margin-right: auto;
+    margin-left: auto;
+    /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.288); */
+    text-align: center;
+    font-size: smaller;
+
+    h2{
+        color: rgb(30, 82, 43);
+        font-weight:700;
+    }
+
+    p{
+        font-size: 1.2rem;
+    }
+
+    .sensor-data-display{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.288);
+
+        .sensor{
+            margin-top: 10px;
+        }
+}
+}
+.cont-dashboard .img-dashboard{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    margin-left: auto;
+    margin-right: auto;
+    border: #3c403d 1.7px solid;
+}
+
+.cont-dashboard .img-collage{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: #3c403d 1.7px solid;
+    margin-top: 10px;
+    height: 300px;
+    overflow: hidden;
+}
+.cont-dashboard .img-collage img{
+    width: 33.33%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.cont-dashboard .img-collage img:hover{
+    width:50%;
+    height: 330px;
+    object-fit: cover;
+    scale:1.2;
+    transition: 0.7s;
+}
+.cont-dashboard .img-collage .img-row1{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.cont-dashboard .img-collage .img-row2{
+    display: flex;
+    justify-content:center;
+    overflow: hidden;
+}
+
+.sensor-data-display{
+    h3{
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #3c403d;
+        text-decoration: underline;
+    }
+
+    .refresh{
+        margin-right:1rem;
+        text-align: end;
+        font-size: 2rem;
+        :hover{
+            cursor: pointer;
+        }
+        
+    }
+}
+.sensor-data{
+    justify-content: space-between;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.control{
+    display: flex;
+    justify-content: center;
+}
+.toggle-button {
+    display: block;
+    width: 30%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .toggle-button.active {
+    background-color: #28a745; /* Green for active state */
+  }
+  
+  .toggle-button:hover {
+    background-color: #0056b3;
+  }
