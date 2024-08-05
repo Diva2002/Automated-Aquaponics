@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { IoRefreshOutline } from "react-icons/io5";
 import Nav from './Nav.jsx'
@@ -13,32 +13,43 @@ function Home() {
     const toggleHumidifier = () => setHumidifierActive(!humidifierActive);
 
     const [sensorData, setSensorData] = useState({
-        temperature: 25.5,
+        temperature: 35.5,
         humidity: 60,
         lightColor: 'purple',
         pH: 6.5,
-        waterLevel: 60,
     });
-    
-    const refreshSensorData = () => {
-        // Simulate fetching new data or generating random values
-        setSensorData({
-          temperature: (Math.random() * 10 + 20).toFixed(1), // Random value between 20.0 and 30.0
-          humidity: Math.floor(Math.random() * 10) + 50, // Random value between 50 and 90
-          lightColor: ['purple', 'blue'][Math.floor(Math.random() * 2)], // Random color
-          pH: (Math.random() * 0.5 + 5.5).toFixed(1), // Random value between 5.5 and 7.5
-          waterLevel: Math.floor(Math.random() * 10) + 50, // Random value between 50 and 90
-        });
+
+    const fetchSensorData = async () => {
+        try {
+            const response = await fetch('http://172.16.69.248/sensor');
+            if (response.ok) {
+                const data = await response.json();
+                setSensorData({
+                    temperature: data.temperature,
+                    humidity: data.humidity,
+                    lightColor: ['purple', 'blue'][Math.floor(Math.random() * 2)],
+                    pH: data.pH,
+                });
+            } else {
+                console.error('Failed to fetch sensor data');
+            }
+        } catch (error) {
+            console.error('Error fetching sensor data:', error);
+        }
     };
+
+    useEffect(() => {
+        fetchSensorData();
+    }, []);
 
     return (
         <div className='bg1'>
             <Nav/>
-            <section id="home" class="hero-section">
-                <div class="container">
+            <section id="home" className="hero-section">
+                <div className="container">
                     <h2>Welcome to Our Automated Aquaponics System</h2>
                     <p>Optimizing your aquaculture with advanced technology</p>
-                    <a href="#dashboard" class="btn">Get Started</a>
+                    <a href="#dashboard" className="btn">Get Started</a>
                 </div>
             </section>
             <section id="dashboard">
@@ -75,7 +86,7 @@ function Home() {
             <div className="cont-dashboard">
                 <div className="sensor-data-display">
                     <h3>SENSOR DATA</h3>
-                    <div className="refresh" onClick={refreshSensorData}><IoRefreshOutline /></div>
+                    <div className="refresh" onClick={fetchSensorData}><IoRefreshOutline /></div>
                     <div className="sensor-data d-flex" >
                         <div className="sensor">
                             <h4>Temperature</h4>
@@ -93,13 +104,9 @@ function Home() {
                             <h4>pH</h4>
                             <p>{sensorData.pH}</p>
                         </div>
-                        <div className="sensor">
-                            <h4>Water Level</h4>
-                            <p>{sensorData.waterLevel}%</p>
-                        </div>
                     </div>
-                    <div class="service">
-                        <div class="control">
+                    <div className="service">
+                        <div className="control">
                             <button
                                 id="fan-control"
                                 className={`toggle-button ${fanActive ? 'active' : ''}`}
