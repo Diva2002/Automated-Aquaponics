@@ -3,9 +3,8 @@ import './Home.css'
 import './Nav.css'
 import Container from 'react-bootstrap/Container';
 import "bootstrap/dist/css/bootstrap.min.css";
+import { RiLogoutBoxRLine } from "react-icons/ri";
 import Navbar from 'react-bootstrap/Navbar';
-import { RiLineHeight, RiLogoutBoxRLine } from "react-icons/ri";
-import { RxDividerVertical } from "react-icons/rx";
 
 function Nav() {
     return (
@@ -21,7 +20,7 @@ function Nav() {
             <div className='divider'>|</div>
             <Navbar.Brand href="/predictions" className='nav1'>AI Predictions</Navbar.Brand>
             <div className='divider'>|</div>
-            <Navbar.Brand href="/login"><RiLogoutBoxRLine/></Navbar.Brand>
+            <Navbar.Brand href="/login" className='nav1'><RiLogoutBoxRLine/></Navbar.Brand>
             </Navbar>
         </div>
     );

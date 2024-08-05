@@ -28,7 +28,7 @@ function Home() {
                     temperature: data.temperature,
                     humidity: data.humidity,
                     lightColor: ['purple', 'blue'][Math.floor(Math.random() * 2)],
-                    pH: data.pH,
+                    pH: data.ph_digital,
                 });
             } else {
                 console.error('Failed to fetch sensor data');
