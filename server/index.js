@@ -46,6 +46,6 @@ app.post('/register', (req,res)=>{
     .catch(err => res.status(500).json({message: "Internal server error"}));
 })
 
-app.listen(3001, () => {
+app.listen(3002, () => {
     console.log('Server is running ...')
 })
