@@ -42,6 +42,8 @@ function AboutUs() {
         </section>
         <section className="intro">
             <p>Under the Mentorship of - Dr. Jatin Bedi and Dr. Ravinder Kumar</p>
+            <br/>
+            <hr/>
         </section>
         <section id="contact" class="contact">
             <div class="container">
