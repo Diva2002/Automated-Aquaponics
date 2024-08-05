@@ -3,11 +3,11 @@ import './AboutUs.css';
 import Nav from './Nav';
 
 const teamMembers = [
-  { name: 'Alice Johnson', role: 'Project Lead', imgSrc: 'https://via.placeholder.com/150', intro: 'Alice is the driving force behind our project, ensuring everything runs smoothly and efficiently.' },
-  { name: 'Bob Smith', role: 'Software Engineer', imgSrc: 'https://via.placeholder.com/150', intro: 'Bob develops the software that powers our system, integrating various technologies seamlessly.' },
-  { name: 'Carol Davis', role: 'Electrical Engineer', imgSrc: 'https://via.placeholder.com/150', intro: 'Carol designs and manages the electrical systems, ensuring everything operates reliably.' },
-  { name: 'David Lee', role: 'Data Analyst', imgSrc: 'https://via.placeholder.com/150', intro: 'David analyzes data from our system to optimize performance and provide actionable insights.' },
-  { name: 'Emma Brown', role: 'Systems Integrator', imgSrc: 'https://via.placeholder.com/150', intro: 'Emma integrates various system components, ensuring all parts of the project work together flawlessly.' },
+  { name: 'Divyata Soni', role: 'Project Lead', imgSrc: 'src/assets/divyata.jpg', intro: 'Divyata is the driving force behind our project, ensuring everything runs smoothly and efficiently.' },
+  { name: 'Abhishek Gupta', role: 'Software Engineer', imgSrc: 'src/assets/abhishek.jpg', intro: 'Abhishek develops the software that powers our system, integrating various technologies seamlessly.' },
+  { name: 'Krishna Verma', role: 'Software Engineer', imgSrc: 'src/assets/krishna.jpg', intro: 'Carol designs and manages the electrical systems, ensuring everything operates reliably.' },
+  { name: 'Anhad Sharma', role: 'Data Analyst', imgSrc: 'src/assets/anhad.jpg', intro: 'Anhad analyzes data from our system to optimize performance and provide actionable insights.' },
+  { name: 'Akshita Jain', role: 'Web Developer', imgSrc: 'src/assets/akshita.jpg', intro: 'Akshita integrates various system components, ensuring all parts of the project work together flawlessly.' },
 ];
 
 function AboutUs() {
@@ -39,6 +39,9 @@ function AboutUs() {
                 </div>
             ))}
             </div>
+        </section>
+        <section className="intro">
+            <p>Under the Mentorship of - Dr. Jatin Bedi and Dr. Ravinder Kumar</p>
         </section>
         <section id="contact" class="contact">
             <div class="container">

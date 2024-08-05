@@ -42,12 +42,12 @@ const AquaponicsPage = () => {
                             <p>Maximizes space usage, making it ideal for urban farming and small-scale agriculture.</p>
                         </div>
                         <div className="benefit-item">
-                            <img src="https://via.placeholder.com/150" alt="Sustainable" />
+                            <img src="src/assets/circle3.jpg" alt="Sustainable" />
                             <h3>Sustainable</h3>
                             <p>Reduces the need for chemical fertilizers and pesticides, promoting an eco-friendly farming approach.</p>
                         </div>
                         <div className="benefit-item">
-                            <img src="https://via.placeholder.com/150" alt="Dual Production" />
+                            <img src="src/assets/circle4.jpg" alt="Dual Production" />
                             <h3>Dual Production</h3>
                             <p>Produces both fish and vegetables, providing a diverse range of products from one system.</p>
                         </div>
