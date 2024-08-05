@@ -47,7 +47,7 @@ function Login(){
             <div className="p-3 container1 rounded w-25">
                 <h2>LOGIN</h2>
                 <form onSubmit={handleSubmit}>
-                    <div className="mb-3">
+                    <div className="mb-3 form-text-cont">
                         <label htmlFor="email">
                             <strong>Email</strong>
                         </label>
@@ -61,7 +61,7 @@ function Login(){
                         onChange={(e) => setEmail(e.target.value)}
                         />
                     </div>
-                    <div className="mb-3">
+                    <div className="mb-3 form-text-cont">
                         <label htmlFor="password">
                             <strong>Password</strong>
                         </label>

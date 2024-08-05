@@ -69,7 +69,7 @@ function Signup(){
             <div className="p-3 container1 rounded w-25">
                 <h2>REGISTER</h2>
                 <form onSubmit={handleSubmit}>
-                    <div className="mb-3">
+                    <div className="mb-3 form-text-cont">
                         <label htmlFor="email">
                             <strong>Name</strong>
                         </label>
@@ -83,7 +83,7 @@ function Signup(){
                         onChange={(e) => setName(e.target.value)}
                         />
                     </div>
-                    <div className="mb-3">
+                    <div className="mb-3 form-text-cont">
                         <label htmlFor="email">
                             <strong>Email</strong>
                         </label>
@@ -97,7 +97,7 @@ function Signup(){
                         onChange={(e) => setEmail(e.target.value)}
                         />
                     </div>
-                    <div className="mb-3">
+                    <div className="mb-3 form-text-cont">
                         <label htmlFor="password">
                             <strong>Password</strong>
                         </label>
