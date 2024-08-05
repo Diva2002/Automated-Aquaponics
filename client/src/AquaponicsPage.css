@@ -44,9 +44,16 @@
 .benefits h2,
 .images h2,
 .resources h2 {
-    color: #4caf50;
+    color: #275228;
     font-size: 2rem;
     margin-bottom: 20px;
+}
+
+.introduction h3{
+    color: #275228;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .introduction p {
@@ -149,8 +156,8 @@
     background: #333;
     color: white;
     text-align: center;
-    padding: 15px;
     position: fixed;
+    padding-top: 15px;
     width: 100%;
     bottom: 0;
 }

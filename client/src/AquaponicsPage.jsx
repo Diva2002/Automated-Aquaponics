@@ -53,27 +53,20 @@ const AquaponicsPage = () => {
                         </div>
                     </div>
                 </section>
-                <section className="images">
-                    <h2>Gallery</h2>
-                    <div className="image-grid">
-                        <img src="https://via.placeholder.com/300x200" alt="Aquaponics Setup" />
-                        <img src="https://via.placeholder.com/300x200" alt="Healthy Plants" />
-                        <img src="https://via.placeholder.com/300x200" alt="Fish Tank" />
-                        <img src="https://via.placeholder.com/300x200" alt="Harvested Vegetables" />
-                    </div>
-                </section>
-                <section className="resources">
-                    <h2>Additional Resources</h2>
-                    <p>For more information on aquaponics, check out these resources:</p>
-                    <ul>
-                        <li><a href="https://www.aquaponics.org" target="_blank" rel="noopener noreferrer">Aquaponics.org</a></li>
-                        <li><a href="https://www.aquaponicsjournal.com" target="_blank" rel="noopener noreferrer">Aquaponics Journal</a></li>
-                        <li><a href="https://www.aquaponicsguide.com" target="_blank" rel="noopener noreferrer">Aquaponics Guide</a></li>
-                    </ul>
+                <section className="introduction">
+                    <h3>Key Features</h3>
+                    <p>
+                    The system integrates advanced computer vision technology with IoT-enabled hardware to provide real-time monitoring and intelligent decision-making capabilities for enhanced plant and fish production.
+                    </p>
+                    <p>Computer Vision Integration: Utilizes sophisticated algorithms to analyze plant growth stages (seedling, young plant, mature plant), optimizing cultivation strategies.
+                        IoT-Enabled Hardware: Monitors crucial water quality parameters (temperature, pH, nutrient levels, dissolved oxygen) using sensor nodes, ensuring optimal conditions for aquaponic ecosystems.
+                        User-Friendly Interface: Offers a web-based interface for remote monitoring and control, providing users with visualizations of sensor data and captured images.
+                        Reliable Network Infrastructure: Establishes a robust network for seamless data transmission, enabling timely decision-making and system adjustments.
+                    </p>
                 </section>
             </main>
             <footer className="footer">
-                <p>© 2024 Aquaponics Learning Hub. All rights reserved.</p>
+                <p>© 2024 Fins and Ferns. All rights reserved.</p>
             </footer>
         </div>
     );

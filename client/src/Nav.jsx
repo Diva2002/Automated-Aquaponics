@@ -14,9 +14,9 @@ function Nav() {
                     <Navbar.Brand href="/home"><img src='src/assets/logo.png'/></Navbar.Brand>
                     <Navbar.Brand href="/home">FINS AND FERNS</Navbar.Brand>
             </Container>
-            <Navbar.Brand href="/about" className='nav1'>About Us</Navbar.Brand>
+            <Navbar.Brand href="/home" className='nav1'>Home</Navbar.Brand>
             <div className='divider'>|</div>
-            <Navbar.Brand href="/images" className='nav1'>Images</Navbar.Brand>
+            <Navbar.Brand href="/about" className='nav1'>About Us</Navbar.Brand>
             <div className='divider'>|</div>
             <Navbar.Brand href="/predictions" className='nav1'>AI Predictions</Navbar.Brand>
             <div className='divider'>|</div>
