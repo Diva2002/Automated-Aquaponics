@@ -54,8 +54,27 @@
 }
 
 .intro-image img {
+    width: 60%;
+}
+
+.intro-image{
+    display: flex;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+.intro-image .right-col{
+    float: right;
+    padding-left: auto;
+    text-align: end;
     width: 100%;
-    border-radius: 10px;
+
+    img{
+        margin-bottom: 5px;
+        text-align: end;
+        width: 70%;
+    }
 }
 
 .benefits {
@@ -72,7 +91,7 @@
 
 .benefit-item {
     flex: 1 1 calc(50% - 20px);
-    background: white;
+    background: #c4e7c4;
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 20px;
@@ -134,4 +153,15 @@
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+.btn-default{
+    border:none;
+}
+.btn-default:hover{
+    background-color:#39603d !important;
+    color:rgb(255, 255, 255);
+}
+.btn-default:active{
+    color:rgb(95, 99, 121) !important;
 }

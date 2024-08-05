@@ -80,7 +80,7 @@ function Login(){
                     </button>
                 </form>
                 <p><br/>New User?</p>
-                <Link to="/" id="Reg" className="btn btn-default border w-100  bg-light rounded-0 text-decoration-none">
+                <Link to="/register" id="Reg" className="btn btn-default border w-100  bg-light rounded-0 text-decoration-none">
                     Register
                 </Link>
             </div>

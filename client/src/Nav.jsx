@@ -20,7 +20,7 @@ function Nav() {
             <div className='divider'>|</div>
             <Navbar.Brand href="/predictions" className='nav1'>AI Predictions</Navbar.Brand>
             <div className='divider'>|</div>
-            <Navbar.Brand href="/login" className='nav1'><RiLogoutBoxRLine/></Navbar.Brand>
+            <Navbar.Brand href="/" className='nav1'><RiLogoutBoxRLine/></Navbar.Brand>
             </Navbar>
         </div>
     );

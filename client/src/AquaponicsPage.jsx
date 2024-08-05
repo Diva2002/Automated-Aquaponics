@@ -1,5 +1,6 @@
 import React from 'react';
 import './AquaponicsPage.css';
+import { Link } from "react-router-dom";
 
 const AquaponicsPage = () => {
     return (
@@ -7,6 +8,9 @@ const AquaponicsPage = () => {
             <header className="header">
                 <h1>Explore the Wonders of Aquaponics</h1>
                 <p>Learn about this sustainable farming method and its amazing benefits.</p>
+                <Link to="/login" id="Login" className="btn btn-default border w-100  bg-light rounded-0 text-decoration-none">
+                    Let the journey begin
+                </Link>
             </header>
             <main className="main-content">
                 <section className="introduction">
@@ -16,12 +20,16 @@ const AquaponicsPage = () => {
                     Plants are grown in hydroponics systems, with their roots immersed in the nutrient-rich effluent water. This enables them to filter out the ammonia that is toxic to the aquatic animals, or its metabolites. After the water has passed through the hydroponic subsystem, it is cleaned and oxygenated, and can return to the aquaculture vessels.
                     The size, complexity, and types of foods grown in an aquaponic system can vary as much as any system found in either distinct farming discipline
                     </p>
-                    <div className="intro-image">
+                    <div className="intro-image d-flex">
                         <img src="src/assets/aquaponics-diagram.webp" alt="Aquaponics System" />
+                        <div className="right-col">
+                            <img src="src/assets/aquaponics-garden.jpg" alt="Aquaponics Setup" />
+                            <img src="src/assets/aquaponics-garden1.jpeg" alt="Aquaponics Setup" />
+                        </div>
                     </div>
                 </section>
                 <section className="benefits">
-                    <h2>Benefits of Aquaponics</h2>
+                    <h2>BENEFITS OF AQUAPONICS</h2>
                     <div className="benefits-list">
                         <div className="benefit-item">
                             <img src="src/assets/circle1.jpeg" alt="Water Efficiency" />

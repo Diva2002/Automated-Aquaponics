@@ -13,22 +13,22 @@ function Home() {
     const toggleHumidifier = () => setHumidifierActive(!humidifierActive);
 
     const [sensorData, setSensorData] = useState({
-        temperature: 35.5,
-        humidity: 60,
-        lightColor: 'purple',
-        pH: 6.5,
+        temperature: '-',
+        humidity: '-',
+        lightColor: '-',
+        pH: '-',
     });
 
     const fetchSensorData = async () => {
         try {
-            const response = await fetch('http://172.16.69.248/sensor');
+            const response = await fetch('http://192.168.134.198/sensor');
             if (response.ok) {
                 const data = await response.json();
                 setSensorData({
-                    temperature: data.temperature,
-                    humidity: data.humidity,
+                    temperature: data.temperature + '°C',
+                    humidity: data.humidity + '%',
                     lightColor: ['purple', 'blue'][Math.floor(Math.random() * 2)],
-                    pH: data.ph_digital,
+                    pH: data.ph,
                 });
             } else {
                 console.error('Failed to fetch sensor data');
@@ -90,11 +90,11 @@ function Home() {
                     <div className="sensor-data d-flex" >
                         <div className="sensor">
                             <h4>Temperature</h4>
-                            <p>{sensorData.temperature}°C</p>
+                            <p>{sensorData.temperature}</p>
                         </div>
                         <div className="sensor">
                             <h4>Humidity</h4>
-                            <p>{sensorData.humidity}%</p>
+                            <p>{sensorData.humidity}</p>
                         </div>
                         <div className="sensor">
                             <h4>Light Color</h4>
