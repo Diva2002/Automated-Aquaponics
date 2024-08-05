@@ -5,7 +5,7 @@ import Nav from './Nav';
 const teamMembers = [
   { name: 'Divyata Soni', role: 'Project Lead', imgSrc: 'src/assets/divyata.jpg', intro: 'Divyata is the driving force behind our project, ensuring everything runs smoothly and efficiently.' },
   { name: 'Abhishek Gupta', role: 'Software Engineer', imgSrc: 'src/assets/abhishek.jpg', intro: 'Abhishek develops the software that powers our system, integrating various technologies seamlessly.' },
-  { name: 'Krishna Verma', role: 'Software Engineer', imgSrc: 'src/assets/krishna.jpg', intro: 'Carol designs and manages the electrical systems, ensuring everything operates reliably.' },
+  { name: 'Krishna Verma', role: 'Software Engineer', imgSrc: 'src/assets/krishna.jpg', intro: 'Krishna designs and manages the electrical systems, ensuring everything operates reliably.' },
   { name: 'Anhad Sharma', role: 'Data Analyst', imgSrc: 'src/assets/anhad.jpg', intro: 'Anhad analyzes data from our system to optimize performance and provide actionable insights.' },
   { name: 'Akshita Jain', role: 'Web Developer', imgSrc: 'src/assets/akshita.jpg', intro: 'Akshita integrates various system components, ensuring all parts of the project work together flawlessly.' },
 ];
