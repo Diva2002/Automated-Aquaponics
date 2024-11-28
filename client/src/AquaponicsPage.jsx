@@ -51,10 +51,20 @@ const AquaponicsPage = () => {
                             <h3>Dual Production</h3>
                             <p>Produces both fish and vegetables, providing a diverse range of products from one system.</p>
                         </div>
+                        <div className="benefit-item">
+                            <img src="src/assets/circle5.jpeg" alt="Sustainable" />
+                            <h3>Faster plant growth</h3>
+                            <p>Plants grown in aquaponics grow faster because they have access to nutrients 24 hours a day.</p>
+                        </div>
+                        <div className="benefit-item">
+                            <img src="src/assets/circle6.jpeg" alt="Dual Production" />
+                            <h3>Healthier Produce</h3>
+                            <p>Produce grown in aquaponics systems is free of pesticides and herbicides. Plants are free of soil-borne diseases. Fish in aquaponics systems are free of growth hormones and antibiotics.</p>
+                        </div>
                     </div>
                 </section>
                 <section className="introduction">
-                    <h3>Key Features</h3>
+                    <h2>Key Features</h2>
                     <p>
                     The system integrates advanced computer vision technology with IoT-enabled hardware to provide real-time monitoring and intelligent decision-making capabilities for enhanced plant and fish production.
                     </p>

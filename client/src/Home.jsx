@@ -13,10 +13,10 @@ function Home() {
     const toggleHumidifier = () => setHumidifierActive(!humidifierActive);
 
     const [sensorData, setSensorData] = useState({
-        temperature: '-',
-        humidity: '-',
-        lightColor: '-',
-        pH: '-',
+        temperature: '27.5°C',
+        humidity: '86%',
+        lightColor: 'purple',
+        pH: '8.4',
     });
 
     const fetchSensorData = async () => {

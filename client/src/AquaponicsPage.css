@@ -14,8 +14,9 @@
 
 .header h1 {
     margin: 0;
-    font-size: 3rem;
-    font-weight: 600;
+    font-size: 2.6rem;
+    font-weight: 700;
+    text-transform:uppercase;
 }
 
 .header p {
@@ -23,30 +24,33 @@
 }
 
 .main-content {
-    padding: 20px;
-    margin-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 .introduction{
     margin-bottom: 40px;
-    padding-left: 30px;
-    padding-right: 30px;
+    margin-top: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
     text-align: justify;
 }
 
 .images, .benefits, .resources{
     margin-bottom: 40px;
     text-align: justify;
-    padding-left: 0px !important;
-    padding-right: 0px !important;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 40px;
 }
 .introduction h2,
 .benefits h2,
 .images h2,
 .resources h2 {
     color: #275228;
-    font-size: 2rem;
+    font-size: 1.8rem;
+    font-weight: 700;
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
 .introduction h3{
@@ -57,7 +61,8 @@
 }
 
 .introduction p {
-    font-size: 1.1rem;
+    font-size: 1.06rem;
+    text-align:justify;
 }
 
 .intro-image img {
@@ -69,6 +74,7 @@
     width: 70%;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 40px;
     justify-content: space-between;
 }
 .intro-image .right-col{
@@ -97,7 +103,7 @@
 }
 
 .benefit-item {
-    flex: 1 1 calc(50% - 20px);
+    flex: 1 1 calc(33.33% - 20px);
     background: #c4e7c4;
     border: 1px solid #ddd;
     border-radius: 10px;
