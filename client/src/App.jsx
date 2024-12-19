@@ -7,6 +7,7 @@ import Home from './Home.jsx'
 
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import AquaponicsPage from './AquaponicsPage.jsx'
+import Prediction from './Prediction.jsx'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path='/home' element={<Home />} />
         <Route path='/about' element={<AboutUs/>}/>
+        <Route path='/prediction' element={<Prediction/>}/>
         <Route path='/'element={<AquaponicsPage/>}/>
       </Routes>
     </BrowserRouter>

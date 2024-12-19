@@ -18,7 +18,7 @@ function Nav() {
             <div className='divider'>|</div>
             <Navbar.Brand href="/about" className='nav1'>About Us</Navbar.Brand>
             <div className='divider'>|</div>
-            <Navbar.Brand href="/predictions" className='nav1'>AI Predictions</Navbar.Brand>
+            <Navbar.Brand href="/prediction" className='nav1'>AI Predictions</Navbar.Brand>
             <div className='divider'>|</div>
             <Navbar.Brand href="/" className='nav1'><RiLogoutBoxRLine/></Navbar.Brand>
             </Navbar>
