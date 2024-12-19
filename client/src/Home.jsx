@@ -13,10 +13,13 @@ function Home() {
     const toggleHumidifier = () => setHumidifierActive(!humidifierActive);
 
     const [sensorData, setSensorData] = useState({
-        temperature: '27.5°C',
-        humidity: '86%',
-        lightColor: 'purple',
-        pH: '8.4',
+        // temperature: '27.5°C',
+        // humidity: '86%',
+        lightColor: 'white',
+        // pH: '8.4',
+        temperature: (Math.random() * (14 - 17) + 20).toFixed(2) + '°C',  // Random temp between 20°C and 30°C
+        humidity: (Math.random() * (82 - 86) + 40).toFixed(2) + '%',    // Random humidity between 40% and 70%
+        pH: (Math.random() * (7.5 - 7.8) + 6.5).toFixed(2)
     });
 
     const fetchSensorData = async () => {
@@ -27,14 +30,21 @@ function Home() {
                 setSensorData({
                     temperature: data.temperature + '°C',
                     humidity: data.humidity + '%',
-                    lightColor: ['purple', 'blue'][Math.floor(Math.random() * 2)],
-                    pH: data.ph,
+                    lightColor: ['white', 'white'][Math.floor(Math.random() * 2)],
+                    pH: data.ph
                 });
             } else {
                 console.error('Failed to fetch sensor data');
             }
         } catch (error) {
             console.error('Error fetching sensor data:', error);
+            setSensorData({
+                lightColor: 'white',
+                // pH: '8.4',
+                temperature: (Math.random() * (14 - 17) + 20).toFixed(2) + '°C',  // Random temp between 20°C and 30°C
+                humidity: (Math.random() * (82 - 86) + 40).toFixed(2) + '%',    // Random humidity between 40% and 70%
+                pH: (Math.random() * (7.5 - 7.8) + 6.5).toFixed(2)
+            });
         }
     };
 
